@@ -1,0 +1,162 @@
+/*
+Inicio de estilos de ver
+*/
+
+.section-ver {
+    display: grid;
+    width: 85%;
+}
+
+.section-ver a {
+    justify-self: center;
+}
+
+.section-ver a i {
+    font-size: 2rem;
+    justify-self: center;
+    position: relative;
+    top: .4rem;
+    margin-right: 1rem;
+}
+
+.section-ver .ver-title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    justify-items: center;
+    text-align: center;
+}
+
+.section-ver .ver-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.section-ver .ver-cards .ver-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    padding: 10rem;
+    grid-gap: 3rem;
+}
+
+.section-ver .ver-cards .ver-cards-container .card {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-column-gap: 3rem;
+    animation-name: moveInUp;
+    animation-duration: 1s;
+}
+
+.section-ver .ver-cards .ver-cards-container .card:hover {
+    opacity: .9;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-dark-2);
+}
+
+.section-ver .ver-cards .ver-cards-container .card:active:after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+}
+
+.section-ver .ver-cards .ver-cards-container .card {
+    box-shadow: var(--shadow-dark-1);
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s;
+    border-radius: var(--box-radius);
+    background-color: var(--color-white);
+    width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-ver .ver-cards .ver-cards-container header {
+    padding: 1rem 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+    box-shadow: var(--shadow-light);
+}
+
+.section-ver .ver-cards .ver-cards-container h2, img {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.section-ver .ver-cards .ver-cards-container p {
+    font-size: 1.6rem;
+    padding-bottom: 2rem 0;
+    height: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    overflow: hidden;
+}
+
+.section-ver .ver-cards .ver-cards-container h2 {
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+}
+
+.section-ver .ver-cards .ver-cards-container img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin: 2rem;
+    box-shadow: var(--shadow-dark-2);
+}
+
+.section-ver .ver-cards .ver-cards-container button {
+    background-color: var(--color-alternative-blue);
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1.3rem 5rem;
+    font-size: 1.46rem;
+    margin-bottom: 3rem;
+}
+
+.section-ver .ver-cards .ver-cards-container .contenedor_imagen {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.section-ver .ver-cards .ver-cards-container .contenedor_atributo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: var(--font-semibold);
+    justify-items: center;
+    height: 8rem;
+}
+
+.section-ver .ver-cards .ver-cards-container .contenedor_atributo p {
+    font-size: 1.35rem;
+    text-align: center;
+    color: var(--color-secondary);
+    padding-top: 2rem;
+    position: relative;
+    left: 2rem;
+}
+
+@media (max-width: 100rem) {
+    .section-ver .ver-cards .ver-cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 76.8rem) {
+    .section-ver .ver-cards .ver-cards-container {
+        grid-template-columns: 1fr;
+    }
+    .section-ver .ver-title {
+        grid-template-columns: 1fr;
+    }
+    .section-ver .ver-title h1 {
+        margin-bottom: 3rem;
+    }
+}

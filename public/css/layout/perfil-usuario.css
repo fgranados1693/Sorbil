@@ -1,0 +1,410 @@
+/*
+Inicio de estilos generales del perfil del usuario
+*/
+
+#main-user-profile {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 84%;
+}
+
+.user-profile-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: var(--color-alternative-bg) !important;
+    box-shadow: none;
+    padding: 5rem 0;
+}
+
+.libreria-profile-container {
+    display: grid;
+}
+
+.libreria-profile-container #logo {
+    margin: 0 auto;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: 25rem;
+    grid-template-rows: 1fr;
+    position: absolute;
+    /* height: 95vh; */
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-light);
+    left: -25rem;
+    transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 9999;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidenav-list-item {
+    border-bottom: var(--line);
+}
+
+.sidenav-list-item a {
+    width: 100%;
+    display: block;
+    padding: 1.5rem 1rem;
+    border-left: .4rem solid var(--color-white);
+    transition: .1s;
+}
+
+.sidenav-list-item a:hover {
+    border-left: .4rem solid var(--color-primary);
+    background-color: var(--color-alternative-bg);
+    color: var(--color-black-light);
+}
+
+.sidenav-list-item i {
+    font-size: 2rem;
+    color: var(--color-primary);
+    position: relative;
+    top: 3px;
+}
+
+.sidenav-list-item .chevron {
+    float: right;
+    display: none;
+}
+
+.sidenav-list-item .chevron i {
+    color: var(--color-black);
+}
+
+.sidenav-list-item .chevron::after {
+    content: '';
+    clear: both;
+}
+
+.sidenav-i {
+    /*los íconos de aquellos que no tienen dropdown*/
+    margin-right: 1.4rem;
+}
+
+.sidenav-btn {
+    border-bottom: var(--line);
+}
+
+.sidenav-btn i {
+    /*los íconos de aquellos que tienen dropdown*/
+    margin-right: 1.2rem;
+}
+
+.sidenav-small-menu a {
+    transition: 0.1s;
+    padding: 2rem 2rem;
+    border-bottom: var(--line);
+    transition: height 350ms ease-in-out;
+}
+
+/*Estilos de la navegación secundaria*/
+
+#header-nav-2 .header-nav-2-content {
+    display: grid;
+    grid-template-columns: 10rem repeat(3, 25rem);
+    padding: 1rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+}
+
+/*Estilos del menú de hamburguesa*/
+
+.menu_toggler {
+    position: relative;
+    top: .5rem;
+    left: 3rem;
+    height: 28px;
+    width: 28px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu_icon, .menu_icon:after, .menu_icon:before {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 2.5px;
+    background-color: var(--color-white);
+    transition: .2s;
+}
+
+.menu_icon:before {
+    top: -8px;
+}
+
+.menu_icon::after {
+    top: 8px;
+}
+
+.menu_toggler.active>.menu_icon {
+    background: transparent;
+}
+
+.menu_toggler.active>.menu_icon:after, .menu_toggler.active>.menu_icon:before {
+    top: 0;
+}
+
+.menu_toggler.active>.menu_icon:before {
+    transform: rotate(-45deg);
+}
+
+.menu_toggler.active>.menu_icon:after {
+    transform: rotate(45deg);
+}
+
+/*
+Fin de estilos generales del perfil del usuario
+*/
+
+/*
+Inicio de estilos del perfil del usuario
+*/
+
+#main-user-profile {
+    padding: 5rem 0;
+}
+
+#main-user-profile .main-user-h1 span {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: var(--box-radius);
+    margin-left: 1rem;
+}
+
+#main-user-profile .user-profile-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow-2);
+    padding: 3rem 0;
+}
+
+#main-user-profile .user-profile-container img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: var(--box-radius);
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-dark-2);
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+#main-user-profile .user-profile-container .profile-content {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+}
+
+#main-user-profile .user-profile-container .profile-content p {
+    margin-bottom: 1rem;
+}
+
+/*
+Fin de estilos del perfil del usuario
+*/
+
+/*
+Inicio de estilos de registro
+*/
+
+#main-profile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 3rem 0;
+}
+
+#main-profile>* {
+    margin-bottom: 3rem;
+}
+
+#main-profile button {
+    background-color: var(--color-alternative-blue);
+}
+
+#main-profile #tabla-filtrado {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+#main-profile #barra-busqueda {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+#main-profile #tabla-filtrado button {
+    background-color: var(--color-alternative-blue);
+    color: var(--color-white);
+    border-radius: 0 .4rem .4rem 0;
+}
+
+#main-profile #tabla-filtrado button {
+    box-shadow: var(--shadow-dark-1);
+    transform: translateY(0);
+}
+
+#main-profile .main-profile-titulo {
+    text-align: center;
+    font-weight: var(--font-semibold);
+}
+
+#main-profile .main-profile-titulo h1 {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+#main-profile h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#main-profile .form-nav {
+    display: grid;
+    justify-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-profile .form-nav .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10rem;
+}
+
+#main-profile p {
+    margin-bottom: 2rem;
+}
+
+#main-profile .upload-img {
+    height: 15rem;
+    margin-bottom: 5rem;
+}
+
+#main-profile #form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#main-profile #form input, select {
+    margin-bottom: 3rem;
+}
+
+#main-profile #form textarea, #map {
+    margin-bottom: 3rem;
+}
+
+#main-profile #form #form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+}
+
+#main-profile .credit-card-form {
+    margin-bottom: 8rem;
+}
+
+#main-profile #form input, select {
+    transition: .2s;
+    border: .2rem solid var(--opacity-0);
+}
+
+#main-profile #form input:focus, select:focus {
+    border: .2rem solid var(--color-alternative-blue);
+}
+
+#main-profile #form input[type="file"] {
+    border: .2rem solid var(--opacity-0);
+}
+
+#main-profile #btn_enviar {
+    margin-top: 2rem;
+}
+
+#main-profile .card {
+    width: 20rem;
+}
+
+#main-profile .card-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3rem;
+}
+
+#main-profile .card-container img {
+    width: 80%;
+    height: 15rem;
+    display: block;
+    margin: 0 auto;
+    box-shadow: var(--shadow-dark-2);
+    border-radius: var(--box-radius);
+    margin-top: 1rem;
+}
+
+#main-profile .card-container p {
+    text-align: center;
+    font-weight: var(--font-semibold);
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+#main-profile .card-container .list-icon {
+    position: relative;
+    left: -9rem;
+    top: -1rem;
+    opacity: 1 !important;
+}
+
+.section-ver .ver-title {
+    grid-template-columns: 1fr;
+}
+
+.ver-title h1 {
+    text-align: center !important;
+}
+
+.usuario-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.usuario-options i {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+.usuario-options i:first-child {
+    color: var(--color-alternative-blue);
+}
+
+.club-nav {
+    display: grid;
+    justify-items: center;
+}
+
+.club-nav div {
+    margin-bottom: 3rem;
+}
+
+.club-nav div a {
+    font-size: 1.2rem;
+}
+
+/*
+Fin de estilos de registro
+*/

@@ -1,0 +1,265 @@
+/*
+Inicio de estilos generales de administradores 
+*/
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#grid-admin {
+    display: grid;
+    grid-template-columns: 22rem 1fr auto auto;
+    grid-template-rows: 10rem auto 1fr auto;
+    grid-template-areas: "sidenav header" "sidenav main" "sidenav footer";
+    background-color: var(--color-alternative-bg);
+}
+
+/*Estilos del header del admin*/
+
+#header-admin {
+    grid-area: header;
+    display: grid;
+    padding: 3rem 3rem;
+    background-color: var(--color-white);
+    margin-bottom: 3rem;
+}
+
+#header-admin .header-text {
+    justify-self: start;
+    font-size: 1.4rem;
+}
+
+/*Estilos del main del admin*/
+
+#main-admin {
+    grid-area: main;
+    display: grid;
+}
+
+#main-admin #btn-enviar {
+    margin-top: 5rem;
+    font-size: 1.4rem;
+}
+
+#main-admin>* {
+    margin-bottom: 4rem;
+}
+
+#main-admin button {
+    background-color: var(--color-primary);
+}
+
+#main-admin #tabla-filtrado {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+#main-admin #barra-busqueda {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+#main-admin #tabla-filtrado button {
+    background-color: var(--color-alternative-blue);
+    color: var(--color-white);
+    border-radius: 0 .4rem .4rem 0;
+}
+
+#main-admin #tabla-filtrado button {
+    box-shadow: var(--shadow-dark-1);
+    transform: translateY(0);
+}
+
+#main-admin .main-admin-titulo {
+    text-align: center;
+    font-weight: var(--font-semibold);
+}
+
+#main-admin .main-admin-titulo h1 {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
+
+#main-admin .form-nav {
+    display: grid;
+    justify-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-admin .form-nav .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10rem;
+}
+
+#main-admin p {
+    margin-bottom: 2rem;
+}
+
+#main-admin .upload-img {
+    height: 15rem;
+    margin-bottom: 5rem;
+}
+
+#main-admin #form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#main-admin #form div {
+    margin-bottom: 3rem;
+}
+
+#main-admin #form #form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+}
+
+#main-admin #form input, select {
+    transition: .2s;
+    border: .2rem solid var(--opacity-0);
+}
+
+#main-admin #form input:focus, select:focus {
+    border: .2rem solid var(--color-alternative-blue);
+}
+
+#main-admin #form input[type="file"] {
+    border: .2rem solid var(--opacity-0);
+}
+
+#main-admin #btn_enviar {
+    margin-top: 2rem;
+}
+
+/*Sólo en casos específicos*/
+
+#main-admin .centrar-input {
+    justify-items: center;
+    margin: 0 20%;
+}
+
+#main-admin .centrar-input {
+    justify-items: center;
+    margin: 0 20%;
+}
+
+#main-admin td button {
+    float: right;
+}
+
+/*Estilos del sidenav del admin*/
+
+#sidenav-admin {
+    grid-area: sidenav;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-light);
+}
+
+#sidenav-admin .logo {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16rem;
+}
+
+#sidenav-admin .logo img {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+/*Estilos del footer del admin*/
+
+#footer-admin {
+    grid-area: footer;
+    display: grid;
+    padding: 2rem 0;
+    justify-items: center;
+    align-items: end;
+}
+
+.card-container .card-admin {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.card-container .card-admin {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card-container .card-admin i {
+    font-size: 10rem;
+    color: var(--color-primary);
+    align-self: center;
+    padding: 6rem 0;
+}
+
+.card-container .card-admin-two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+.card-container .card-admin-two-col {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card-container .card-admin-two-col i {
+    font-size: 10rem;
+    color: var(--color-primary);
+    align-self: center;
+    padding: 6rem 0;
+}
+
+.card-container .card-admin-two-col h2 {
+    margin-bottom: 2rem;
+}
+
+.card-container .card .card-content {
+    padding-top: 0 !important;
+}
+
+/*
+Fin de estilos generales de administradores
+*/
+
+@media (max-width: 100rem) {
+    .card-container .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+@media (max-width: 76.8rem) {
+    #grid-admin {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "sidenav header" "sidenav main" "sidenav footer";
+    }
+    #main-admin #form #form-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .chevron {
+        display: none;
+    }
+    .header-text {
+        opacity: 0;
+    }
+    #main-admin .form-nav {
+        grid-template-columns: 1fr;
+        grid-row-gap: 2rem;
+    }
+}

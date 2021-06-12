@@ -1,0 +1,8 @@
+#main-user-section-banner {
+    background-image: url(../../imgs/landing-bgr.jpg); /*Se puede poner otra imagen de fondo*/
+    height: 100rem;
+}
+
+#main-user-section-banner .main-user-call-banner {
+    padding: 10rem;
+}

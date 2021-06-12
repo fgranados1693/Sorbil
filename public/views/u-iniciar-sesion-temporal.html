@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/layout/formularios.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
+    <script src="../js/validar-sesion.js"></script>
+    <title>Sorbil -- Iniciar sesión</title>
+</head>
+
+<body id="body-form">
+    <!--Main-->
+
+    <main id="main-form">
+
+        <div id="form-image" class="form-bg-iniciar-sesion-usuario"><a href="../index.html"><img src="../imgs/logo.png"
+                    alt="Logo de Sorbil"></a>
+        </div>
+
+        <section id="seccion-form">
+
+            <div>
+                <div class="form-title">
+                    <h1>Iniciar sesión</h1>
+                </div>
+
+                <form id="form" action="#">
+
+                    <div id="form-container">
+
+                        <div class="form-container-inputs">
+
+                            <div>
+                                <label for="#">Correo electrónico</label>
+                                <input id="txt-correo" type="email" placeholder="Ingresar el correo electrónico"
+                                    aria-label="Ingresar el correo electrónico">
+                            </div>
+                            <div>
+                                <label for="#">Contraseña</label>
+                                <input id="txt-contrasena" type="password" placeholder="Ingresar la contraseña"
+                                    aria-label="Ingresar la contraseña">
+                            </div>
+
+                        </div>
+
+                        <button id="txt-btn" type="button">Iniciar sesión</button>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--Scripts-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="../js/controlador-u-iniciar-sesion-temporal.js"></script>
+    <script src="../js/servicio-usuario.js"></script>
+
+</body>
+
+</html>

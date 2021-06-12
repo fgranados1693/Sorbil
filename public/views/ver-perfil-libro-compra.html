@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="stylesheet" href="../css/layout/usuarios.css">
+    <link rel="stylesheet" href="../css/paginas/perfil-libro.css">
+    <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
+    <title>Sorbil -- Perfil de libros</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header-user">
+
+        <div id="header-nav-1">
+            <a class="logo" href="../index.html"><img src="../imgs/logo.png" alt="Logo de Sorbil"></a>
+
+            <nav>
+                <a href="../index.html"><i class='bx bx-home-circle'></i>Inicio</a>
+                <a href="../views/ver-perfil-intercambios.html"><i class='bx bxs-book'></i>Intercambios</a>
+                <a href="../views/u-quienes-somos.html"><i class='bx bx-user-voice'></i>Quiénes somos</a>
+            </nav>
+
+            <div class="header-nav-1-btns" id="nav-inicio">
+                <div class="header-btn">
+                    <a class="btn-white" href="../views/u-iniciar-sesion.html">Iniciar sesión</a>
+                </div>
+
+                <div class="header-btn dropdown-btn">
+                    <a href="../views/u-registrar-usuario.html" class="btn-color">Crear cuenta</a>
+                    <div class="dropdown-btn-content">
+                        <a href="../views/u-registrar-libreria.html">Registrar librería</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-user-container user-menu-wrap ocultar" id="div-usuarioEnSesion">
+                <a class="mini-photo-wrapper" href="#"><img id="avatar-img" class="mini-photo" src="../imgs/user.png"
+                        width="36" height="36"><i class='bx bx-chevron-down'></i></a>
+                <div class="menu-user-container">
+                    <ul class="user-menu">
+                        <a class="user-menu-link" href="#" id="ver_perfil_usuario">Perfil</a>
+                        <a id="btn-cerrar-sesion" class="user-menu-link" href="#">Cerrar sesión</a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="header-nav-2" class="sticky">
+            <nav class="top">
+
+                <div class="dropdownBackground">
+                    <span class="arrow"></span>
+                </div>
+
+                <ul class="cool header-nav-2-content">
+
+                    <li>
+                        <a href="../views/ver-libros.html">Catálogo de libros<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-libros" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-book'></i>Lista de libros</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="../views/ver-libros.html" class="btn-white">Más libros</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../views/ver-librerias.html">Librerías asociadas<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-librerias" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-store'></i>Lista de librerías</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="../views/ver-librerias.html" class="btn-white">Más librerías</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../views/ver-clubes.html">Clubes de lectura<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-clubes" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-group'></i>Lista de clubes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="../views/ver-clubes.html" class="btn-white">Más clubes</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+
+    </header>
+
+    <!--Main-->
+    <main id="main-user">
+        <section class="section-book">
+            <div class="book-img">
+                <div id="div-img-portada"><img src="../imgs/book-placeholder.png" id="portada"></div>
+                <p class="conten-div-precio precio-libro">Precio: <span id="precio"></span></p>
+                <button type="button">Comprar</button>
+            </div>
+            <div class="book-info">
+                <h2>Información del libro</h2>
+                <div class="book-info-list">
+                    <div class="book-titles">
+                        <p class="conten-div-precio">Autor: </p>
+                        <p class="conten-div-precio">Categoría: </p>
+                        <p class="conten-div-precio">Género: </p>
+                        <p class="conten-div-precio">Publicación: </p>
+                        <p class="conten-div-precio">ISBN: </p>
+                        <p class="conten-div-precio">Formato: </p>
+                        <p class="conten-div-precio">Idioma: </p>
+                    </div>
+                    <div class="book-atributes">
+                        <p id="autor"></p>
+                        <p id="categoria"></p>
+                        <p id="genero"></p>
+                        <p id="fecha"></p>
+                        <p id="isbn"></p>
+                        <p id="tipo"></p>
+                        <p id="idioma"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="book-rating">
+                <h1 id="title-libro"></h1>
+                <!-- <p>Best seller</p> -->
+                <div class="book-rating-info">
+                    <div class="book-rating-container">
+                        <div class="book-ratings">
+                            <form class="form-ratings">
+                                <input id="radio1" type="radio" name="calificaciones" value="5">
+                                <label class="bx bxs-book-content" for="radio1"></label>
+                                <input id="radio2" type="radio" name="calificaciones" value="4">
+                                <label class="bx bxs-book-content" for="radio2"> </label>
+                                <input id="radio3" type="radio" name="calificaciones" value="3">
+                                <label class="bx bxs-book-content" for="radio3"> </label>
+                                <input id="radio4" type="radio" name="calificaciones" value="2">
+                                <label class="bx bxs-book-content" for="radio4"> </label>
+                                <input id="radio5" type="radio" name="calificaciones" value="1">
+                                <label class="bx bxs-book-content" for="radio5"> </label>
+                                <!-- Botón para registrar calificación -->
+                                <!-- <button id="btn-enviar" type="button"></button> -->
+                            </form>
+                        </div>
+                        <div class="book-rating-global">
+                            <p id="rating-global">4,8 (4500 Calificacion)</p>
+                        </div>
+                    </div>
+
+                    <div class="book-ed">
+                        <p>Edicion: <span id="edicion"></span></p>
+                        <p>Editorial: <span id="editorial"></span></p>
+                    </div>
+                    <div class="book-descrip">
+                        <h3>Sinopsis</h3>
+                        <p id="descrip"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-user">
+
+        <div id="footer-links">
+            <a href="../index.html"><img src="../imgs/logo-light.png" alt="Logo de Sorbil"></a>
+
+            <nav>
+                <a href="../index.html"><i class='bx bx-home-circle'></i>Inicio</a>
+                <a href="../views/ver-perfil-intercambios.html"><i class='bx bxs-book'></i>Intercambios</a>
+                <a href="../views/u-quienes-somos.html"><i class='bx bx-user-voice'></i>Quiénes somos</a>
+            </nav>
+        </div>
+
+        <div id="footer-copyright">
+            <a class="copyright" href="fenix.html">©2019 - Desarrollado con mucho <i class='bx bxs-coffee'></i> por
+                <span>FÉNIX</span></a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/servicio-libros.js"></script>
+    <script src="../js/controlador-perfil-libro.js"></script>
+    <script src="../js/componentes/controlador-dropdowns-main.js"></script>
+    <script src="../js/componentes/controlador-dropdowns-user.js"></script>
+    <script src="../js/componentes/controlador-dropdowns-nav.js"></script>
+    <!-- JS para listar -->
+    <script src="../js/servicio-club.js"></script>
+    <script src="../js/servicio-libreria.js"></script>
+    <script src="../js/componentes/controlador-lista-enlaces.js"></script>
+    <script src="../js/componentes/controlador-nav-inicios.js "></script>
+    <script src="../js/cerrar-sesion.js"></script>
+    <script src="../js/controlador-avatar.js"></script>
+</body>
+
+</html>

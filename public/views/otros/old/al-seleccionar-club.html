@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/validar-usuario-adminLib.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/layout/administradores.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
+    <title>Sorbil -- Librería -- Seleccionar club de lectura</title>
+</head>
+
+<body id="grid-admin">
+
+    <!--Header-->
+    <header id="header-admin">
+
+        <h3 class="header-text">Área del administrador de librería</h3>
+
+        <div class="header-user-icons">
+            <div class="header-user-container">
+                <a class="header-icon" href="#"><i class='bx bx-mail-send'></i>
+                    <span class="user-notification">1</span>
+                </a>
+            </div>
+            <div class="header-user-container">
+                <a class="header-icon" href="#"><i class='bx bx-bell'></i>
+                    <span class="user-notification">6</span>
+                </a>
+            </div>
+
+            <div class="header-user-container user-menu-wrap"><a class="mini-photo-wrapper" href="#"><img
+                        class="mini-photo" src="../imgs/user.png" width="36" height="36"> <i
+                        class='bx bx-chevron-down'></i></a>
+                <div class="menu-user-container">
+                    <ul class="user-menu">
+                        <a class="user-menu-link" href="#">Perfil</a>
+                        <a id="btn-cerrar-sesion" class="user-menu-link" href="#">Cerrar sesión</a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--Main-->
+    <main id="main-admin">
+        <div class="main-admin-titulo">
+            <h1>Selecciona el club de lectura</h1>
+            <p>Busca la información que te interesa</p>
+        </div>
+
+        <div class="form-nav card-container">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-img card-club-presencial"></div>
+                    <div class="card-content">
+                        <p>Club presencial</p>
+                        <a class="card-btn" href="al-registrar-club-presencial.html">Registrar club</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card-img card-club-virtual"></div>
+                    <div class="card-content">
+                        <p>Club virtual</p>
+                        <a class="card-btn" href="al-registrar-club-virtual.html">Registrar club</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--Aside-->
+    <aside id="sidenav-admin">
+    
+        <div class="sidebar">
+    
+            <div class="sidenav-menu">
+                <a class="logo" href="../views/ver-perfil-administrador-libreria.html"><img src="../imgs/logo.png"
+                        alt="logo de Sorbil"></a>
+            </div>
+    
+            <ul class="sidenav-list">
+                <!-- <li class="sidenav-list-item"><a href="../views/ver-perfil-administrador-libreria.html"><i
+                            class='bx bx-home sidenav-i'></i>Inicio</a>
+                </li> -->
+    
+                <li class="sidenav-list-item">
+                    <a href="#" class="sidenav-btn dropdown-toggle">
+                        <i class='bx bx-plus'></i>
+                        Registros
+                        <div class="chevron"><i class='bx bx-chevron-down'></i></div>
+                    </a>
+                    <div class="sidenav-small-menu dropdown-menu">
+                        <a href="../views/al-registrar-libro.html">Libro</a>
+                        <a href="../views/al-registrar-categorias.html">Categorías</a>
+                        <a href="../views/al-registrar-generos.html">Géneros</a>
+                        <a href="../views/al-registrar-oferta.html">Oferta</a>
+                        <a href="../views/al-seleccionar-club.html">Club de lectura</a>
+                    </div>
+                </li>
+    
+                <li class="sidenav-list-item">
+                    <a href="#" class="sidenav-btn dropdown-toggle">
+                        <i class='bx bx-list-ul'></i>
+                        Listados
+                        <div class="chevron"><i class='bx bx-chevron-down'></i></div>
+                    </a>
+                    <div class="sidenav-small-menu dropdown-menu">
+                        <a href="../views/al-listar-libros.html">Libros</a>
+                        <a href="../views/al-listar-usuarios.html">Usuarios</a>
+                        <a href="../views/al-listar-sucursales.html">Sucursales</a>
+                        <a href="../views/al-listar-autores.html">Autores</a>
+                        <a href="../views/al-listar-intercambios.html">Intercambios</a>
+                        <a href="../views/al-listar-ofertas.html">Ofertas</a>
+                        <a href="../views/al-listar-categorias.html">Categorías</a>
+                        <a href="../views/al-listar-generos.html">Géneros</a>
+                        <a href="../views/al-listar-clubes.html">Clubes de lectura</a>
+                    </div>
+                </li>
+    
+                <li class="sidenav-list-item"><a href="#"><i class='bx bxs-report sidenav-i'></i>Reportes</a>
+                </li>
+    
+                <li class="sidenav-list-item"><a href="#"><i
+                            class='bx bx-dollar-circle sidenav-i'></i>Ventas</a></li>
+    
+                <li class="sidenav-list-item"><a href="#"><i
+                            class='bx bx-loader-alt sidenav-i'></i>Bitácora</a></li>
+            </ul>
+    
+        </div>
+    
+    </aside>
+    
+    <!--Footer-->
+    <footer id="footer-admin">
+        <a class="copyright" href="../views/fenix.html">©2019 - Desarrollado con mucho <i class='bx bxs-coffee'></i> por
+            <span>FÉNIX</span></a>
+    </footer>
+    <!--Scripts-->
+    <script src="../js/componentes/controlador-dropdowns-nav.js"></script>
+    <script src="../js/componentes/controlador-dropdowns-user.js"></script>
+    <script src="../js/cerrar-sesion.js"></script>
+
+</body>
+
+</html>

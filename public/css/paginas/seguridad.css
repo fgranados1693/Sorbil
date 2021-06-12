@@ -1,0 +1,23 @@
+#seccion-form {
+    margin: 0 auto;
+    padding: 6rem;
+}
+
+.form-seguridad {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.form-seguridad .input-group:last-child {
+    margin-bottom: 2rem;
+    padding-top: 6rem;
+}
+
+.form-seguridad .input-group label {
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.form-seguridad .input-group {
+    margin-bottom: 3rem;
+}

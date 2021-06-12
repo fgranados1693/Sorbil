@@ -1,0 +1,33 @@
+#nombre {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--color-secondary);
+    font-weight: var(--font-semibold);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-ver {
+    display: grid;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-ver .ver-cards .ver-cards-container .contenedor_precio p {
+    font-size: 1.8rem;
+    color: var(--color-alternative-blue);
+    font-weight: var(--font-semibold);
+    height: 5rem;
+}
+
+.section-ver .ver-cards .ver-cards-container .contenedor_precio_cant p {
+    color: var(--color-alternative-green);
+    font-weight: var(--font-semibold);
+}
+
+.section-ver .ver-cards .ver-cards-container .contenedor_precio_cant p::before {
+    content: 'Cantidad:';
+    margin-right: 1rem;
+    color: var(--color-black);
+}

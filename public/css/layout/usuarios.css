@@ -1,0 +1,463 @@
+/*
+Inicio de estilos del header
+*/
+
+/*Estilos de la navegación principal*/
+
+#header-user {
+    background-color: var(--color-alternative-bg);
+}
+
+#header-user a i {
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    position: relative;
+    top: .3rem;
+}
+
+#header-nav-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.8rem 0;
+}
+
+#header-nav-1 .logo img {
+    width: 16rem;
+    margin-right: 2.8rem;
+}
+
+#header-nav-1 nav {
+    display: grid;
+    grid-template-columns: 14rem repeat(2, 19rem);
+    grid-column-gap: 1rem;
+}
+
+#header-nav-1 a:hover {
+    transition: .1s;
+}
+
+#header-nav-1 nav a:hover {
+    color: var(--color-primary);
+}
+
+#header-nav-1 .header-nav-1-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 18rem);
+    grid-gap: 1.5rem;
+    margin-left: auto;
+}
+
+#header-nav-1 .header-user-icons {
+    display: grid;
+    align-items: center;
+    position: relative;
+    top: .1rem;
+}
+
+#header-nav-1 .header-user-icons i {
+    font-size: 2.5rem;
+}
+
+#header-nav-1 .header-user-icons .header-user-container .bx-chevron-down {
+    font-size: 1.6rem;
+    top: -.6rem;
+}
+
+#header-nav-1 .header-user-icons .user-notification {
+    left: 1.7rem;
+}
+
+/*dropdown del btn*/
+
+#header-nav-1 .dropdown-btn {
+    position: relative;
+    display: inline-block;
+}
+
+#header-nav-1 .dropdown-btn-content {
+    display: none;
+    top: 3rem;
+    position: absolute;
+    min-width: 15rem;
+    padding-top: 1rem;
+}
+
+#header-nav-1 .dropdown-btn-content a {
+    text-decoration: none;
+    display: block;
+    border-radius: var(--box-radius);
+    color: var(--color-black);
+    font-size: 1.4rem;
+    padding: 1.3rem 2.5rem;
+    background-color: var(--color-white);
+    transition: .2s;
+    box-shadow: var(--shadow-dark-1);
+}
+
+#header-nav-1 .dropdown-btn-content a:hover {
+    transform: translateY(-1px);
+    color: var(--color-primary);
+    box-shadow: var(--shadow-dark-2);
+}
+
+#header-nav-1 .dropdown-btn:hover .dropdown-btn-content {
+    display: block;
+}
+
+/* #header-nav-1 .header-user-icons .header-user-container button {
+    width: 100%;
+    background-color: var(--color-white);
+    box-shadow: none;
+    transform: translateY(0);
+    border: 0;
+    padding: 1rem 0;
+}
+
+#header-nav-1 .header-user-icons .header-user-container button:hover {
+    box-shadow: none;
+    transform: translateY(0);
+    border: 0;
+} */
+
+/*Estilos de la navegación secundaria*/
+
+#header-nav-2 {
+    background-color: var(--color-secondary);
+    z-index: 9999;
+}
+
+#header-nav-2 .header-nav-2-content {
+    display: grid;
+    grid-template-columns: repeat(3, 25rem);
+    padding: 1rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+}
+
+#header-nav-2 .header-nav-2-content>li>a:hover {
+    color: var(--color-alternative-bg);
+}
+
+#header-nav-2 .header-nav-2-content>li>a i {
+    color: var(--color-white);
+    margin-left: 2.5rem;
+}
+
+#header-nav-2 .header-nav-2-content>li>a {
+    font-size: 1.4rem;
+    color: var(--color-white);
+}
+
+/*Estilos del dropdown*/
+
+#header-nav-2 .dropdownBackground {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    background: #fff;
+    border-radius: var(--box-radius);
+    box-shadow: var(--shadow-dark-2);
+    transition: all 0.3s, opacity 0.2s, transform 0.2s;
+    transform-origin: 50% 0;
+    display: grid;
+    justify-items: center;
+    display: none;
+    z-index: 9999;
+}
+
+#header-nav-2 .dropdownBackground.open {
+    display: block;
+}
+
+#header-nav-2 .dropdown {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    padding: 3.2rem 4rem;
+    top: -4rem;
+    border-radius: var(--box-radius);
+    transition: all 0.5s;
+    transform: translateY(8rem);
+    will-change: opacity;
+    display: none;
+    z-index: 9999;
+}
+
+#header-nav-2 .arrow {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: 20rem;
+    display: block;
+    background: var(--color-white);
+    transform: translateY(-20%) rotate(45deg);
+}
+
+#header-nav-2 .cool>li {
+    position: relative;
+    display: grid;
+    justify-items: center;
+}
+
+#header-nav-2 .cool>li>a {
+    padding: 0.4rem;
+    margin: 0.4rem;
+}
+
+#header-nav-2 .trigger-enter .dropdown {
+    display: block;
+}
+
+#header-nav-2 .trigger-enter-active .dropdown {
+    opacity: 1;
+}
+
+/*Estilos del contenido del dropdown*/
+
+#header-nav-2 .dropdown-content {
+    display: grid;
+    grid-gap: 3rem;
+}
+
+#header-nav-2 .dropdown-content li {
+    margin-bottom: 0.5rem;
+}
+
+#header-nav-2 .dropdown-content a {
+    font-size: 1.6rem;
+    transition: .2s;
+}
+
+#header-nav-2 .dropdown-content a:hover {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+}
+
+#header-nav-2 .dropdown-content .btn-white {
+    font-size: 1.2rem;
+    width: 100%;
+    display: inline-block;
+    color: var(--color-alternative-blue);
+    box-shadow: none;
+}
+
+#header-nav-2 .dropdown-content .btn-white:hover {
+    font-size: 1.2rem;
+    color: var(--color-alternative-blue);
+    box-shadow: var(--shadow-dark-1);
+}
+
+.tabla-links {
+    display: grid;
+}
+
+.tabla-links th {
+    color: var(--color-secondary);
+    font-weight: var(--font-semibold);
+    border-bottom: var(--line);
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    width: 35rem;
+}
+
+.tabla-links tbody {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    width: 35rem;
+}
+
+.tabla-links button {
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--color-black);
+    font-size: 1.25rem;
+    padding: 2rem 0;
+    text-align: left;
+}
+
+.tabla-links button:hover {
+    color: var(--color-primary);
+    transform: translateY(-1px);
+}
+
+.tabla-links i {
+    margin-right: .6rem;
+    position: relative;
+    font-size: 1.6rem;
+    top: .1rem;
+    color: var(--color-alternative-blue);
+}
+
+/*Estilos para de información para el usuario*/
+
+.section-landing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20rem;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 3rem;
+}
+
+.section-landing h2 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+.section-landing p {
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+}
+
+.section-landing .landing-div-info {
+    align-self: start;
+    justify-self: start;
+    width: 90%;
+}
+
+.section-landing img {
+    width: 100%;
+    /* box-shadow: var(--shadow-dark-2); */
+}
+
+.section-landing .landing-div-img {
+    display: grid;
+}
+
+.section-landing .img-end {
+    justify-self: end;
+}
+
+.section-landing-center {
+    text-align: center;
+}
+
+.section-clubes {
+    margin-bottom: 2rem;
+}
+
+.section-map {
+    background-image: var(--color-white);
+    padding: 5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-map h2 {
+    margin-bottom: 2rem;
+}
+
+.section-map #map {
+    height: 50rem;
+}
+
+/*
+Fin de estilos del header
+*/
+
+/*
+Inicio de estilos generales del main
+*/
+
+#main-user #txt-filtro {
+    width: 55%;
+    margin-top: 5rem;
+    transition: all .2s;
+    box-shadow: var(--shadow-dark-1);
+    animation-name: moveInUp;
+    animation-duration: 1s;
+}
+
+#txt-filtro:focus {
+    width: 60%;
+}
+
+.perfil-usuario-nav {
+    display: grid;
+    grid-template-columns: 14rem repeat(2, 19rem);
+    grid-column-gap: 1rem;
+}
+
+.perfil-usuario-nav a {
+    transition: .2s;
+}
+
+.perfil-usuario-nav a:hover {
+    color: var(--color-primary);
+}
+
+.perfil-usuario-nav i {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    position: relative;
+    top: .3rem;
+}
+
+/*Estilos del dropdown*/
+
+/*
+Fin de estilos generales del main
+*/
+
+/*
+Inicio de estilos del footer
+*/
+
+#footer-user #footer-links {
+    display: grid;
+    justify-items: center;
+    padding: 5rem 0;
+    background-color: var(--color-secondary);
+}
+
+#footer-user #footer-links img {
+    width: 18rem;
+}
+
+#footer-user #footer-links a img {
+    margin-bottom: 2rem;
+}
+
+#footer-user #footer-links nav a {
+    color: var(--color-white);
+    transition: .1s;
+}
+
+#footer-user #footer-links nav a:hover {
+    color: var(--color-alternative-bg);
+}
+
+#footer-user #footer-links nav {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 2rem;
+}
+
+#footer-user a i {
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    position: relative;
+    top: .3rem;
+}
+
+#footer-user #footer-copyright {
+    text-align: center;
+    background-color: var(--color-alternative-bg);
+    width: 100%;
+    padding: 1rem 0;
+}
+
+/*
+Fin de estilos del footer
+*/

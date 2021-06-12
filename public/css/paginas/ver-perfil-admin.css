@@ -1,0 +1,78 @@
+.main-card img {
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-radius: 50%;
+}
+
+.main-card p {
+    font-size: 2rem;
+}
+
+.main-card p:first-child {
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+    border-bottom: var(--line);
+}
+
+.card-content p {
+    font-weight: var(--font-semibold);
+}
+
+.card {
+    width: 10rem;
+}
+
+.card-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.card-row .card {
+    display: grid;
+    padding: 1rem;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-row .card i {
+    font-size: 5rem;
+    color: var(--color-primary);
+}
+
+.card-row .card a {
+    font-size: 1.6rem;
+    color: var(--color-secondary);
+}
+
+.card-row-title {
+    text-align: left;
+    margin-left: 5rem;
+}
+
+#descripcion {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#avatar {
+    width: 20rem;
+    margin-left: 2rem;
+}
+
+#imagen {
+    width: 22rem;
+    margin-left: 2rem;
+}
+
+#main-admin>* {
+    margin-bottom: 2rem;
+}
+
+.user-profile-container .profile-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    text-align: start;
+}

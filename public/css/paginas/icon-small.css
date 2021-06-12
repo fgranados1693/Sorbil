@@ -1,0 +1,9 @@
+#tabla-filtrado td {
+    text-align: end;
+    width: 60%;
+    padding: 0 3rem;
+}
+
+#tabla-filtrado td:first-child {
+    text-align: justify;
+}

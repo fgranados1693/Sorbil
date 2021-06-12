@@ -1,0 +1,53 @@
+body {
+    background-color: var(--color-alternative-bg);
+}
+
+.section-main {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 61, 136, 0.829)), to(rgba(31, 61, 136, 0.795))), url(https://source.unsplash.com/1600x900/?computer,tech);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: grid;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+    height: 100vh;
+    padding-top: 1rem;
+}
+
+.section-main .main-info {
+    display: grid;
+    justify-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    animation-name: moveInUp;
+    animation-duration: 1.5s;
+    position: relative;
+    top: -8rem;
+}
+
+.section-main .main-info h1 {
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    font-size: 5.5rem;
+    color: var(--color-grey);
+}
+
+.section-main .main-info p {
+    width: 60%;
+    text-align: left;
+    font-size: 2rem;
+    color: var(--color-white);
+    line-height: 1.7;
+}
+
+.main-info img {
+    margin-bottom: 5rem;
+    width: 20% !important;
+}
+
+.h2-quienes-somos {
+    padding-top: 5rem;
+}
+
+footer {
+    padding-bottom: 0;
+}

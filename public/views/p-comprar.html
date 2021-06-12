@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/validar-usuario-u.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="stylesheet" href="../css/layout/usuarios.css">
+    <link rel="stylesheet" href="../css/layout/perfil-usuario.css">
+    <link rel="stylesheet" href="../css/paginas/registrar-tarjeta.css">
+    <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
+    <title>Sorbil -- Inicio</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header-user">
+
+        <div id="header-nav-1">
+            <a class="logo" href="../views/u-inicio.html"><img src="../imgs/logo.png" alt="Logo de Sorbil"></a>
+
+            <nav>
+                <a href="../views/u-inicio.html"><i class='bx bx-home-circle'></i>Inicio</a>
+                <a href="#" id="u-intercambios"><i class='bx bxs-book'></i>Intercambios</a>
+                <a href="#" id="u-quienes-somos"><i class='bx bx-user-voice'></i>Quiénes somos</a>
+            </nav>
+
+            <div id="nav-inicio" class="header-user-icons">
+                <div class="header-user-container">
+                    <a class="header-icon" href="#" id="u-carrito"><i class='bx bx-cart-alt'></i>
+                        <!-- <span class="user-notification">1</span> -->
+                    </a>
+                </div>
+                <!-- <div class="header-user-container">
+                    <a class="header-icon" href="#" id="u-biblioteca"><i class='bx bx-book-bookmark'></i>
+                    </a>
+                </div> -->
+                <div class="header-user-container user-menu-wrap"><b class="mini-photo-wrapper" href="#"><img
+                            class="mini-photo" src="" width="36" height="36" id="avatar-img"> <i
+                            class='bx bx-chevron-down'></i></b>
+                    <div class="menu-user-container">
+                        <ul class="user-menu">
+                            <a class="user-menu-link" href="#" id="ver_perfil_usuario">Perfil</a>
+                            <a id="btn-cerrar-sesion" class="user-menu-link" href="#">Cerrar sesión</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="header-nav-2" class="sticky">
+            <nav class="top">
+
+                <div class="dropdownBackground">
+                    <span class="arrow"></span>
+                </div>
+
+                <ul class="cool header-nav-2-content">
+
+                    <div class="menu_toggler">
+                        <span class="menu_icon"></span>
+                    </div>
+
+                    <li>
+                        <a href="p-ver-libros.html">Catálogo de libros<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-libros" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-book'></i>Lista de libros</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="p-ver-libros.html" class="btn-white">Más libros</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="p-ver-librerias.html">Librerías asociadas<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-librerias" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-store'></i>Lista de librerías</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="p-ver-librerias.html" class="btn-white">Más librerías</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="p-ver-clubes.html">Clubes de lectura<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-clubes" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-group'></i>Lista de clubes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="p-ver-clubes.html" class="btn-white">Más clubes</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+    </header>
+
+    <!--Aside-->
+    <aside id="sidenav-user">
+
+        <div class="sidebar">
+
+            <ul class="sidenav-list">
+
+                <li class="sidenav-list-item"><a href="#" id="u-tarjetas"><i
+                            class='bx bxs-credit-card sidenav-i'></i>Tarjetas de
+                        crédito</a>
+                </li>
+
+                <li class="sidenav-list-item">
+                    <a href="#" class="sidenav-btn dropdown-toggle" id="u-listar-clubes">
+                        <i class='bx bxs-book-open'></i>
+                        Clubes de lectura
+                        <div class="chevron"><i class='bx bx-chevron-down'></i></div>
+                    </a>
+
+                    <div class="sidenav-small-menu dropdown-menu">
+                        <a href="#" id="u-registrar-club-virtual">Club virtual</a>
+                        <a href="#" id="u-registrar-club-presencial">Club presencial</a>
+                    </div>
+                </li>
+
+
+                <li class="sidenav-list-item"><a href="#" id="u-listar-compras"><i
+                            class='bx bx-money sidenav-i'></i>Compras</a>
+                </li>
+
+                <li class="sidenav-list-item"><a href="#" id="u-listar-ofertas"><i
+                            class='bx bxs-purchase-tag sidenav-i'></i>Ofertas</a>
+                </li>
+
+                <li class="sidenav-list-item"><a href="#" id="u-listar-intercambios"><i
+                            class='bx bxs-group sidenav-i'></i>Intercambios</a>
+                </li>
+
+                <li class="sidenav-list-item"><a href="#" id="u-listar-calificaciones"><i
+                            class='bx bxs-star sidenav-i'></i>Calificaciones</a>
+                </li>
+
+                <li class="sidenav-list-item"><a href="#" id="u-listar-notificaciones"><i
+                            class='bx bxs-bell-ring sidenav-i'></i>Notificaciones</a>
+                </li>
+
+                <li class="sidenav-list-item"><a href="#" id="u-seguridad"><i
+                            class='bx bxs-lock sidenav-i'></i>Seguridad</a>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </aside>
+
+    <!--Main-->
+    <main id="main-profile">
+        <div class="main-profile-titulo">
+            <h1>Compra de libros</h1>
+        </div>
+
+        <form id="form" action="#">
+            <div>
+                <div>
+                    <label for="#">Tarjetas</label>
+                    <select id="txt-tarjetas">
+                        <option value="" selected="selected" disabled="disabled">Selecciona tu tarjeta de pago</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="form-container">
+
+            </div>
+            <button id="btn-enviar" type="button">Comprar</button>
+
+        </form>
+
+    </main>
+
+    <footer id="footer-user">
+
+        <div id="footer-links">
+            <a href="../views/u-inicio.html"><img src="../imgs/logo-light.png" alt="Logo de Sorbil"></a>
+
+            <nav>
+                <a href="../views/u-inicio.html"><i class='bx bx-home-circle'></i>Inicio</a>
+                <a href="#" id="u-intercambios"><i class='bx bxs-book'></i>Intercambios</a>
+                <a href="#" id="u-quienes-somos"><i class='bx bx-user-voice'></i>Quiénes somos</a>
+            </nav>
+        </div>
+
+        <div id="footer-copyright">
+            <a class="copyright" href="fenix.html">©2019 - Desarrollado con mucho <i class='bx bxs-coffee'></i>
+                por
+                <span>FÉNIX</span></a>
+        </div>
+
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/componentes/controlador-sidemenu.js"></script>
+    <!-- <script src="../js/componentes/controlador-dropdowns-nav.js"></script> -->
+    <script src="../js/componentes/controlador-dropdowns-user.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js"
+        type="text/javascript"></script>
+    <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script src="../js/cerrar-sesion.js"></script>
+    <script src="../js/controlador-inicio-u.js"></script>
+    <script src="../js/controlador-avatar.js"></script>
+    <script src="../js/servicio-usuario.js"></script>
+    <script src="../js/servicio-ventas.js"></script>
+    <script src="../js/servicio-carrito.js"></script>
+    <script src="../js/servicio-libros.js"></script>
+    <script src="../js/servicio-libreria.js"></script>
+    <script src="../js/controlador-compra.js"></script>
+
+</body>
+
+</html>

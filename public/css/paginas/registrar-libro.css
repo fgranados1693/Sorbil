@@ -1,0 +1,26 @@
+.upload-img {
+    display: grid;
+    justify-items: center;
+}
+
+/*Esto es lo que se muestra cuando hay un error en las validaciones*/
+
+.input_error {
+    border: 2px #e74c3c solid !important;
+}
+
+.img_registro_libro {
+    height: 20rem;
+}
+
+#input_sinopsis {
+    font-family: inherit;
+    font-size: 1.4rem;
+    outline: none;
+    padding: var(--box-padding);
+    border-radius: var(--box-radius);
+}
+
+#main-admin .upload-img {
+    height: 8rem;
+}

@@ -1,0 +1,268 @@
+/*
+Inicio de definicion de variables
+*/
+
+:root {
+    --color-primary: #FF004C;
+    --color-secondary: #1F1F1F;
+    --color-grey: #f5f5f5;
+}
+
+body {
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/*
+Fin de definicion de variables
+*/
+
+/*
+Inicio de definicion de variables
+*/
+
+.section-main {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 31, 31, 0.9)), to(rgba(31, 31, 31, 0.9))), url(https://source.unsplash.com/1600x900/?computer,tech);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    align-items: center;
+    display: grid;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+}
+
+.section-main .main-info {
+    display: grid;
+    justify-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    animation-name: moveInUp;
+    animation-duration: 1.5s;
+    position: relative;
+    top: -8rem;
+}
+
+.section-main .main-info h1 {
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    font-size: 5.5rem;
+    color: var(--color-grey);
+}
+
+.section-main .main-info p {
+    width: 60%;
+    text-align: left;
+    font-size: 2rem;
+    color: var(--color-white);
+    line-height: 1.7;
+}
+
+.section-main .main-info img {
+    width: 10%;
+}
+
+.section-integrantes {
+    padding: 10rem 0;
+}
+
+.section-integrantes .section-title {
+    font-size: 4rem;
+    color: var(--color-secondary);
+    margin-bottom: 5rem;
+}
+
+.section-integrantes {
+    display: grid;
+    align-items: left;
+}
+
+.section-integrantes i {
+    font-size: 10rem;
+    padding: 6rem 0;
+    color: var(--color-primary);
+}
+
+.section-integrantes .cards h2 {
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+}
+
+.company-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: left;
+    text-align: justify;
+    grid-gap: 1rem;
+    padding-top: 5rem;
+}
+
+.info {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.info h2 {
+    border-bottom: var(--line);
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.info h3 {
+    margin-bottom: 2rem;
+}
+
+.info div {
+    margin-bottom: 2rem;
+}
+
+.info p {
+    line-height: 1.7;
+    font-size: 1.8rem;
+}
+
+.section-company h2, h3, p {
+    text-align: left;
+}
+
+.glide {
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.section-valores {
+    margin: 0 auto;
+    width: 70%;
+    padding: 5rem 0;
+}
+
+.section-valores h3 {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.info-img img {
+    width: 40%;
+}
+
+.info-valores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    grid-gap: 3rem;
+}
+
+.info-valores h2 {
+    margin-bottom: 2rem;
+}
+
+.info-valores h4 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: var(--line);
+}
+
+.info-valores p {
+    text-align: justify;
+    font-size: 1.6rem;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.info-valores i {
+    font-size: 6rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.section-app {
+    padding: 10rem 0;
+}
+
+.section-app h3 {
+    font-size: 5rem;
+    margin-bottom: .5rem;
+    padding: 1rem 0;
+}
+
+.section-app p {
+    margin-bottom: 1rem;
+}
+
+.app-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    text-align: justify;
+    grid-gap: 1rem;
+    padding-top: 5rem;
+    grid-gap: 3rem;
+}
+
+.app-info img {
+    width: 90%;
+    justify-self: center;
+}
+
+.portafolio-sorbil {
+    align-self: center;
+    justify-self: start;
+}
+
+.portafolio-sorbil h2 {
+    align-self: start;
+    justify-self: start;
+    border-bottom: var(--line);
+}
+
+.portafolio-sorbil h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.portafolio-sorbil p {
+    width: 80%;
+    font-size: 1.8rem;
+}
+
+.portafolio-sorbil .btn-color {
+    margin-bottom: 5rem;
+    display: inline-block;
+}
+
+.sorbil-logo img {
+    width: 30%;
+    margin-bottom: 3rem;
+}
+
+footer {
+    padding: 5rem 0;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    margin-bottom: 5rem;
+}
+
+.skills i {
+    font-size: 5rem;
+    color: var(--color-primary);
+}
+
+/*
+Fin de definicion de variables
+*/

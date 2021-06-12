@@ -1,0 +1,49 @@
+.ver-title-compras {
+    display: grid;
+    text-align: center;
+    padding: 5rem;
+    margin-bottom: 0;
+}
+
+.list-icon i {
+    opacity: 1;
+    font-size: 3rem !important;
+}
+
+.section-ver a {
+    height: 5rem;
+    align-self: center;
+}
+
+.contenedor_precio {
+    color: blue;
+    opacity: 1;
+}
+
+.total-pagar {
+    display: grid;
+    justify-self: end;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    margin-right: 12rem;
+    align-items: end;
+}
+
+.total-pagar p {
+    position: relative;
+    top: 2rem;
+    left: -6.5rem;
+    font-weight: var(--font-semibold);
+    color: var(--color-secondary);
+    font-size: 1.4rem;
+}
+
+.total-titulo {
+    font-size: 2.5rem;
+}
+
+.total-titulo span {
+    left: 4.5rem;
+    position: relative;
+}

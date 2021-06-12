@@ -1,0 +1,126 @@
+.card-container {
+    grid-gap: .5rem;
+}
+
+.card-container .card {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    animation-name: moveInUp;
+    animation-duration: 1s;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 3rem;
+}
+
+.card-container .card .contenedor_imagen {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-column-gap: 3rem;
+}
+
+.card-container .card .contenedor_imagen img {
+    width: 20rem;
+    box-shadow: var(--shadow-dark-1);
+    border-radius: var(--box-radius);
+    margin-left: 1rem;
+}
+
+.card-container .card .contenedor_imagen img:last-child {
+    width: 16rem;
+    height: 16rem;
+    box-shadow: var(--shadow-dark-1);
+    border-radius: 60%;
+}
+
+.card-container .card .header {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 5rem auto;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.card-container .card .header i {
+    font-size: 3rem;
+    color: var(--color-secondary);
+}
+
+.card-container .card .header h2 {
+    font-size: 2.5rem;
+    margin: 3rem 0;
+}
+
+.card-container .card .div_nombre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: var(--font-semibold);
+    border-bottom: var(--line);
+}
+
+.card-container .card .div_nombre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-container .card .div_ubicaciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-container .card .contenedor_atributo {
+    display: grid;
+    grid-template-columns: 6rem 20rem 10rem 4rem;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.card-container .card .contenedor_atributo .bx {
+    font-size: 2.6rem;
+}
+
+.bx-mail-send:before {
+    color: var(--color-alternative-blue);
+}
+
+.bxs-phone-call:before {
+    color: var(--color-alternative-blue);
+}
+
+.contenedor_iconos {
+    display: grid;
+    text-align: end;
+}
+
+.card-icon {
+    font-size: 4.5rem;
+    transition: .2s;
+}
+
+.card-icon:hover {
+    opacity: .8;
+}
+
+.bxs-x-square:before {
+    color: var(--color-alternative-red);
+}
+
+.bxs-check-square:before {
+    color: var(--color-alternative-green);
+}

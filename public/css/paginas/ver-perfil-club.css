@@ -1,0 +1,29 @@
+.section-one {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section-one .img img {
+    border-radius: var(--box-radius);
+    align-self: center;
+}
+
+.section-one .title #fecha {
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.section-one .title #descripcion {
+    justify-self: start;
+}
+
+.section-one .title #btn-registrar {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 3rem;
+}
+
+.section-one .title {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 3rem;
+}

@@ -1,0 +1,14 @@
+.section-one {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section-one .img img {
+    border-radius: 50%;
+    width: 80%;
+    align-self: center;
+}
+
+.section-one .info .info-2-col .info-2-col-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

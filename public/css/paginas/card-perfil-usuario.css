@@ -1,0 +1,100 @@
+.card-container {
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 3rem;
+}
+
+.card-container .card {
+    display: grid;
+    justify-items: center;
+    padding: .8rem;
+}
+
+.card-container .card .card-content a {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.card-container .contenedor_imagen {
+    display: grid;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.card-container img {
+    border-radius: 50%;
+    height: 16rem;
+    width: 16rem;
+    display: grid;
+    margin-bottom: 1rem;
+}
+
+.card-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-container p {
+    align-self: center;
+    font-size: 1.6rem;
+}
+
+.card-container button {
+    margin: 30px;
+    height: 4rem;
+}
+
+.card-container .card:hover {
+    opacity: .9;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-dark-2);
+}
+
+.card-container .card:active:after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+}
+
+.card-container .card {
+    display: grid;
+    box-shadow: var(--shadow-dark-1);
+    width: 30rem;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s;
+    border-radius: var(--box-radius);
+    background-color: var(--color-white);
+}
+
+.card-container .card .card-content {
+    display: grid;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    justify-items: center;
+}
+
+.card-container .card .card-content .card-btn {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s;
+    background-color: var(--color-alternative-blue);
+    color: var(--color-white);
+    box-shadow: var(--shadow-dark-1);
+    padding: var(--a-padding);
+    border-radius: var(--box-radius);
+}
+
+.card-container .card .card-content .card-btn:hover {
+    opacity: .9;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-light);
+}
+
+.card-container .card .card-img {
+    background-size: cover;
+    height: 20rem;
+    background-position: center;
+    border-radius: .4rem .4rem 0 0;
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+}

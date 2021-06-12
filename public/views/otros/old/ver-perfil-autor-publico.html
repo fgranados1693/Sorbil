@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="stylesheet" href="../css/layout/usuarios.css">
+    <link rel="stylesheet" href="../css/layout/perfiles.css">
+    <link rel="stylesheet" href="../css/paginas/ver-perfil-libreria.css">
+    <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
+    <title>Sorbil -- Perfil de librería</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header-user">
+
+        <div id="header-nav-1">
+            <a class="logo" href="../index.html"><img src="../imgs/logo.png" alt="Logo de Sorbil"></a>
+
+            <nav>
+                <a href="../index.html"><i class='bx bx-home-circle'></i>Inicio</a>
+                <a href="../views/ver-perfil-intercambios.html"><i class='bx bxs-book'></i>Intercambios</a>
+                <a href="../views/u-quienes-somos.html"><i class='bx bx-user-voice'></i>Quiénes somos</a>
+            </nav>
+
+            <div class="header-nav-1-btns">
+                <div class="header-btn">
+                    <a class="btn-white" href="../views/u-iniciar-sesion.html">Iniciar sesión</a>
+                </div>
+
+                <div class="header-btn dropdown-btn">
+                    <a href="../views/u-registrar-usuario.html" class="btn-color">Crear cuenta</a>
+                    <div class="dropdown-btn-content">
+                        <a href="../views/u-registrar-libreria.html">Registrar librería</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="header-nav-2" class="sticky">
+            <nav class="top">
+
+                <div class="dropdownBackground">
+                    <span class="arrow"></span>
+                </div>
+
+                <ul class="cool header-nav-2-content">
+
+                    <li>
+                        <a href="views/ver-libros.html">Catálogo de libros<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-libros" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-book'></i>Lista de libros</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="views/ver-libros.html" class="btn-white">Más libros</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="views/ver-librerias.html">Librerías asociadas<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-librerias" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-store'></i>Lista de librerías</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="views/ver-librerias.html" class="btn-white">Más librerías</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="views/ver-clubes.html">Clubes de lectura<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-clubes" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-group'></i>Lista de clubes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="views/ver-clubes.html" class="btn-white">Más clubes</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main id="main-user">
+        <section class="section-one">
+
+            <div id="logo"><img src="../imgs/book-placeholder.png" id="imagen"></div>
+
+            <div class="section-container">
+                <div class="title">
+                    <h1 id="autor"></h1>
+                    <p id="biografia"></p>
+                </div>
+                <div class="info">
+                    <div class="info-2-col">
+                        <div class="info-2-col-container">
+                            <p>Fecha de nacimiento: <span id="fecha"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer-user">
+
+        <div id="footer-links">
+            <a href="../index.html"><img src="../imgs/logo-light.png" alt="Logo de Sorbil"></a>
+
+            <nav>
+                <a href="../index.html"><i class='bx bx-home-circle'></i>Inicio</a>
+                <a href="../views/ver-perfil-intercambios.html"><i class='bx bxs-book'></i>Intercambios</a>
+                <a href="../views/u-quienes-somos.html"><i class='bx bx-user-voice'></i>Quiénes somos</a>
+            </nav>
+        </div>
+
+        <div id="footer-copyright">
+            <a class="copyright" href="../views/fenix.html">©2019 - Desarrollado con mucho <i class='bx bxs-coffee'></i>
+                por
+                <span>FÉNIX</span></a>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/servicio-autor.js"></script>
+    <script src="../js/controlador-perfil-autor.js"></script>
+    <script src="../js/componentes/controlador-dropdowns-main.js"></script>
+    <!-- JS para listar -->
+    <script src="../js/servicio-club.js"></script>
+    <script src="../js/servicio-libreria.js"></script>
+    <script src="../js/servicio-libros.js"></script>
+    <script src="../js/componentes/controlador-lista-enlaces.js"></script>
+
+</body>
+
+</html>

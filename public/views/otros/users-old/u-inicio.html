@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/validar-usuario-u.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="stylesheet" href="../css/layout/usuarios.css">
+    <link rel="stylesheet" href="../css/layout/perfiles.css">
+    <link rel="stylesheet" href="../css/paginas/ver-libros.css">
+    <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
+    <title>Sorbil -- Inicio</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header-user">
+
+        <div id="header-nav-1">
+            <a class="logo" href="../index.html"><img src="../imgs/logo.png" alt="Logo de Sorbil"></a>
+
+            <nav>
+                <a href="../index.html"><i class='bx bx-home-circle'></i>Inicio</a>
+                <a href="../views/ver-perfil-intercambios.html"><i class='bx bxs-book'></i>Intercambios</a>
+                <a href="../views/u-quienes-somos.html"><i class='bx bx-user-voice'></i>Quiénes somos</a>
+            </nav>
+
+            <div id="nav-inicio" class="header-user-icons">
+                <div class="header-user-container">
+                    <a class="header-icon" href="../views/u-ver-carrito.html"><i class='bx bx-cart-alt'></i>
+                        <span class="user-notification">1</span>
+                    </a>
+                </div>
+                <div class="header-user-container">
+                    <a class="header-icon" href="../views/u-ver-libros.html"><i class='bx bx-book-bookmark'></i>
+                    </a>
+                </div>
+                <div class="header-user-container user-menu-wrap"><b class="mini-photo-wrapper" href="#"><img class="mini-photo" src="" width="36" height="36" id="avatar-img"> <i class='bx bx-chevron-down'></i></b>
+                    <div class="menu-user-container">
+                        <ul class="user-menu">
+                            <a class="user-menu-link" href="#" id="ver_perfil_usuario">Perfil</a>
+                            <a id="btn-cerrar-sesion" class="user-menu-link" href="#">Cerrar sesión</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="header-nav-2" class="sticky">
+            <nav class="top">
+
+                <div class="dropdownBackground">
+                    <span class="arrow"></span>
+                </div>
+
+                <ul class="cool header-nav-2-content">
+
+                    <li>
+                        <a href="ver-libros.html">Catálogo de libros<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-libros" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-book'></i>Lista de libros</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="ver-libros.html" class="btn-white">Más libros</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="ver-librerias.html">Librerías asociadas<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-librerias" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-store'></i>Lista de librerías</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="ver-librerias.html" class="btn-white">Más librerías</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="ver-clubes.html">Clubes de lectura<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown dropdown1">
+                            <div class="dropdown-content">
+                                <table id="tabla-clubes" class="tabla-links">
+                                    <thead>
+                                        <tr>
+                                            <th><i class='bx bxs-group'></i>Lista de clubes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div><a href="ver-clubes.html" class="btn-white">Más clubes</a></div>
+                            </div>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+    </header>
+
+    <!--Main-->
+    <main id="main-user">
+        <section class="section-ver">
+            <div class="ver-title">
+                <h1>Buscá entre los mejores libros</h1>
+            </div>
+            <div class="ver-cards">
+                <input id="txt-filtro" type="text" placeholder="Buscar por título, categoría, género, autor"
+                    aria-label="Buscar por título, categoría, género, autor">
+
+                <div id="lista_libros" class="ver-cards-container">
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="footer-user">
+
+        <div id="footer-links">
+            <a href="../index.html"><img src="../imgs/logo-light.png" alt="Logo de Sorbil"></a>
+
+            <nav>
+                <a href="../index.html"><i class='bx bx-home-circle'></i>Inicio</a>
+                <a href="../views/ver-perfil-intercambios.html"><i class='bx bxs-book'></i>Intercambios</a>
+                <a href="../views/u-quienes-somos.html"><i class='bx bx-user-voice'></i>Quiénes somos</a>
+            </nav>
+        </div>
+
+        <div id="footer-copyright">
+            <a class="copyright" href="fenix.html">©2019 - Desarrollado con mucho <i class='bx bxs-coffee'></i> por
+                <span>FÉNIX</span></a>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/componentes/controlador-dropdowns-main.js"></script>
+    <script src="../js/componentes/controlador-dropdowns-nav.js"></script>
+    <script src="../js/componentes/controlador-dropdowns-user.js"></script>
+    <!-- JS para listar -->
+    <script src="../js/servicio-club.js"></script>
+    <script src="../js/servicio-libreria.js"></script>
+    <script src="../js/servicio-libros.js"></script>
+    <script src="../js/servicio-autor.js"></script>
+    <script src="../js/componentes/controlador-lista-enlaces.js"></script>
+    <script src="../js/controlador-ver-libros.js"></script>
+    <script src="../js/cerrar-sesion.js"></script>
+    <script src="../js/componentes/controlador-dropdowns-main.js"></script>
+    <!-- <script src="../js/componentes/controlador-nav.js"></script> -->
+    <script src="../js/controlador-inicio-u.js"></script>
+    <script src="../js/controlador-avatar.js"></script>
+</body>
+
+</html>

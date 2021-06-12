@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="../js/validar-usuario-u.js"></script> -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/layout/administradores.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
+    <title>Sorbil -- Librería -- Registrar club presencial</title>
+</head>
+
+<body id="grid-admin">
+
+    <!--Header-->
+    <header id="header-admin">
+
+        <h3 class="header-text">Área del administrador de librería</h3>
+
+        <div class="header-user-icons">
+            <div class="header-user-container">
+                <a class="header-icon" href="#"><i class='bx bx-mail-send'></i>
+                    <span class="user-notification">1</span>
+                </a>
+            </div>
+            <div class="header-user-container">
+                <a class="header-icon" href="#"><i class='bx bx-bell'></i>
+                    <span class="user-notification">6</span>
+                </a>
+            </div>
+
+            <div class="header-user-container user-menu-wrap"><a class="mini-photo-wrapper" href="#"><img
+                        id="avatar-img" class="mini-photo" src="" width="36" height="36"> <i
+                        class='bx bx-chevron-down'></i></a>
+                <div class="menu-user-container">
+                    <ul class="user-menu">
+                        <a class="user-menu-link" href="#" id="ver_perfil_usuario">Perfil</a>
+                        <a id="btn-cerrar-sesion" class="user-menu-link" href="#">Cerrar sesión</a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--Main-->
+    <main id="main-admin">
+        <div class="main-admin-titulo">
+            <h1>Registro de club presencial</h1>
+        </div>
+
+        <form id="form" action="#">
+            <div>
+                <div class="upload-img">
+                    <img src="../imgs/book-placeholder.png" alt="" class="img_registro_libro" id="portada">
+                    <label for="file">Subí una imagen</label>
+                    <button id="btnSeleccionarImagen" type="button" id="img-uploader-portada"
+                        class="upload-msg"></button>
+                </div>
+            </div>
+            <div id="form-container">
+                <div>
+                    <label for="#">Nombre del administrador</label>
+                    <input id="txt-administrador-club" type="text" placeholder="Ingrese su nombre"
+                        aria-label="Ingrese su nombre">
+                </div>
+                <div>
+                    <label for="#">Nombre del tema</label>
+                    <input id="txt-tema-club" type="text" placeholder="Ingrese el tema" aria-label="Ingrese el tema">
+                </div>
+                <div>
+                    <label for="#">Correo electrónico</label>
+                    <input id="txt-correo" type="email" placeholder="Ingresar su correo electrónico"
+                        aria-label="Ingresar el correo electrónico">
+                </div>
+                <div>
+                    <label for="#">Teléfono</label>
+                    <input id="txt-telefono" type="tel" placeholder="Formato: 00-00-00-00"
+                        aria-label="Ingresar su teléfono">
+                </div>
+                <div>
+                    <label for="#">Categoría</label>
+                    <select id="txt-categoria" class="opt-categorias">
+                        <option value="" disabled="disabled" selected="true">
+                            Escoger una opción
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="#">Género</label>
+                    <select id="txt-genero" class="opt-generos">
+                        <option value="" disabled="disabled" selected="true">
+                            Escoger una opción
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="#">Fecha de incio</label>
+                        <input id="txt-fecha" type="date" placeholder="Ingresar su correo electrónico"
+                            aria-label="Ingresar el correo electrónico">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="#">Hora</label>
+                        <input id="txt-hora" type="time" placeholder="Ingresar la hora"
+                            aria-label="Ingresar la hora">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="#">Frecuencia</label>
+                        <select id="txt-frecuencia">
+                            <option value="" selected="selected" disabled="disabled">Seleccionar frecuencia</option>
+                            <option value="Semanal">Semanal</option>
+                            <option value="Quincenal">Quincenal</option>
+                            <option value="Mensual">Mensual</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="#">Provincia</label>
+                    <select id="txt-provincia">
+                        <option value="" selected="selected" disabled="disabled">Seleccionar Provincia
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="#">Cantón</label>
+                    <select id="txt-canton">
+                        <option value="" selected="selected" disabled="disabled">Seleccionar Cantón
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="#">Distrito</label>
+                    <select id="txt-distrito">
+                        <option value="" selected="selected" disabled="disabled">Seleccionar Distrito
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <label for="#">Dirección exacta</label>
+                <textarea id="txt-direccion-exacta"></textarea>
+            </div>
+            <div>
+                <div class="input-group">
+                    <label for="#">Descripción del Club</label>
+                    <textarea id="txt-descripcion"></textarea>
+                </div>
+            </div>
+
+            <div>
+                <h2>Seleccioná una sucursal en el mapa</h2>
+            </div>
+            <div id="map"></div>
+
+            <button id="btn-enviar" type="button">Registrar</button>
+
+        </form>
+
+    </main>
+
+<!--Aside-->
+<aside id="sidenav-admin">
+
+    <div class="sidebar">
+
+        <div class="sidenav-menu">
+            <a class="logo" href="#" id="ver_perfil_usuario"><img src="../imgs/logo.png" alt="logo de Sorbil"></a>
+        </div>
+
+        <ul class="sidenav-list">
+
+            <li class="sidenav-list-item"><a href="#" id="u-tarjetas"><i
+                        class='bx bxs-credit-card sidenav-i'></i>Tarjetas de
+                    crédito</a>
+            </li>
+
+            <li class="sidenav-list-item">
+                <a href="#" class="sidenav-btn dropdown-toggle" id="u-listar-clubes">
+                    <i class='bx bxs-book-open'></i>
+                    Clubes de lectura
+                    <div class="chevron"><i class='bx bx-chevron-down'></i></div>
+                </a>
+
+                <div class="sidenav-small-menu dropdown-menu">
+                    <a href="#" id="u-registrar-club-virtual">Club virtual</a>
+                    <a href="#" id="u-registrar-club-presencial">Club presencial</a>
+                </div>
+            </li>
+
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-compras"><i
+                        class='bx bx-money sidenav-i'></i>Compras</a>
+            </li>
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-ofertas"><i
+                        class='bx bxs-purchase-tag sidenav-i'></i>Ofertas</a>
+            </li>
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-intercambios"><i
+                        class='bx bxs-group sidenav-i'></i>Intercambios</a>
+            </li>
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-calificaciones"><i
+                        class='bx bxs-star sidenav-i'></i>Calificaciones</a>
+            </li>
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-notificaciones"><i
+                        class='bx bxs-bell-ring sidenav-i'></i>Notificaciones</a>
+            </li>
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-seguridad"><i
+                        class='bx bxs-lock sidenav-i'></i>Seguridad</a>
+            </li>
+
+        </ul>
+    </div>
+</aside>
+
+    <!--Footer-->
+    <footer id="footer-admin">
+        <a class="copyright" href="../views/fenix.html">©2019 - Desarrollado con mucho <i class='bx bxs-coffee'></i> por
+            <span>FÉNIX</span></a>
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnj4Pk6sSOX5m4uxn8jO9VN2YjMUR7iO4&callback=initMap"></script>
+    <script src="../js/componentes/controlador-map.js"></script>
+    <script src="../js/componentes/controlador-map-var.js"></script>
+    <!-- <script src="../js/componentes/controlador-dropdowns-nav.js"></script> -->
+    <script src="../js/componentes/controlador-dropdowns-user.js"></script>
+    <script src="../js/componentes/controlador-select.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js"
+        type="text/javascript"></script>
+    <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script src="../js/servicio-imagen.js"></script>
+    <script src="../js/servicio-club.js"></script>
+    <script src="../js/controlador-registrar-club-presencial.js"></script>
+    <script src="../js/servicio-genero.js"></script>
+    <script src="../js/servicio-categoria.js"></script>
+    <script src="../js/componentes/controlador-lista-bd.js"></script>
+    <script src="../js/cerrar-sesion.js"></script>
+    <script src="../js/controlador-inicio-u.js"></script>
+    <script src="../js/controlador-avatar.js"></script>
+
+</body>
+
+</html>

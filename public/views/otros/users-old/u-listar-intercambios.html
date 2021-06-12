@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/validar-usuario-u.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/layout/administradores.css">
+    <link rel="stylesheet" href="../css/layout/usuarios.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
+    <title>Sorbil -- Usuario -- Listar libros</title>
+</head>
+
+<body id="grid-admin">
+
+    <!--Header-->
+    <header id="header-admin">
+
+        <!-- <nav class="perfil-usuario-nav">
+            <a href="../index.html"><i class='bx bx-home-circle'></i>Inicio</a>
+            <a href="../views/ver-perfil-intercambios.html"><i class='bx bxs-book'></i>Intercambios</a>
+            <a href="../views/u-quienes-somos.html"><i class='bx bx-user-voice'></i>Quiénes somos</a>
+        </nav> -->
+        <h3 class="header-text">Área del usuario</h3>
+
+        <div class="header-user-icons">
+            <div class="header-user-container">
+                <a class="header-icon" href="../views/u-ver-carrito.html"><i class='bx bx-cart-alt'></i>
+                    <span class="user-notification">1</span>
+                </a>
+            </div>
+            <div class="header-user-container">
+                <a class="header-icon" href="../views/u-ver-libros.html"><i class='bx bx-book-bookmark'></i>
+                </a>
+            </div>
+
+            <div class="header-user-container user-menu-wrap"><a class="mini-photo-wrapper" href="#"><img class="mini-photo" src="../imgs/user.png" width="36" height="36" id="avatar-img">
+                    <i class='bx bx-chevron-down'></i></a>
+                <div class="menu-user-container">
+                    <ul class="user-menu">
+                        <a class="user-menu-link" href="#" id="ver_perfil_usuario">Perfil</a>
+                        <a id="btn-cerrar-sesion" class="user-menu-link" href="#">Cerrar sesión</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--Main-->
+    <main id="main-admin">
+        <div class="main-admin-titulo">
+            <h1>Listados de Intercambios</h1>
+            <p>Buscá la información que te interesa</p>
+        </div>
+
+        <div id="barra-busqueda">
+            <input id="txt_filtro" type="text" placeholder="Buscar por / título / autor / categoría / género / ISBN"
+                aria-label="Buscar por / título / autor / categoría / género / ISBN">
+
+        </div>
+
+        <table id="tabla-filtrado">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Categoría</th>
+                    <th>Género</th>
+                    <th>ISBN</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </main>
+    
+<!--Aside-->
+<aside id="sidenav-admin">
+
+    <div class="sidebar">
+
+        <div class="sidenav-menu">
+            <a class="logo" href="#" id="ver_perfil_usuario"><img src="../imgs/logo.png" alt="logo de Sorbil"></a>
+        </div>
+
+        <ul class="sidenav-list">
+
+            <li class="sidenav-list-item"><a href="#" id="u-tarjetas"><i
+                        class='bx bxs-credit-card sidenav-i'></i>Tarjetas de
+                    crédito</a>
+            </li>
+
+            <li class="sidenav-list-item">
+                <a href="#" class="sidenav-btn dropdown-toggle" id="u-listar-clubes">
+                    <i class='bx bxs-book-open'></i>
+                    Clubes de lectura
+                    <div class="chevron"><i class='bx bx-chevron-down'></i></div>
+                </a>
+
+                <div class="sidenav-small-menu dropdown-menu">
+                    <a href="#" id="u-registrar-club-virtual">Club virtual</a>
+                    <a href="#" id="u-registrar-club-presencial">Club presencial</a>
+                </div>
+            </li>
+
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-compras"><i
+                        class='bx bx-money sidenav-i'></i>Compras</a>
+            </li>
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-ofertas"><i
+                        class='bx bxs-purchase-tag sidenav-i'></i>Ofertas</a>
+            </li>
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-intercambios"><i
+                        class='bx bxs-group sidenav-i'></i>Intercambios</a>
+            </li>
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-calificaciones"><i
+                        class='bx bxs-star sidenav-i'></i>Calificaciones</a>
+            </li>
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-notificaciones"><i
+                        class='bx bxs-bell-ring sidenav-i'></i>Notificaciones</a>
+            </li>
+
+            <li class="sidenav-list-item"><a href="#" id="u-listar-seguridad"><i
+                        class='bx bxs-lock sidenav-i'></i>Seguridad</a>
+            </li>
+
+        </ul>
+    </div>
+</aside>
+
+    <!--Footer-->
+    <footer id="footer-admin">
+        <a class="copyright" href="../views/fenix.html">©2019 - Desarrollado con mucho <i class='bx bxs-coffee'></i> por
+            <span>FÉNIX</span></a>
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="../js/componentes/controlador-dropdowns-nav.js"></script> -->
+    <script src="../js/componentes/controlador-dropdowns-user.js"></script>
+    <script src="../js/servicio-libros.js"></script>
+    <script src="../js/controlador-listar-libros.js"></script>
+    <script src="../js/controlador-inicio-u.js"></script>
+    <script src="../js/cerrar-sesion.js"></script>
+    <script src="../js/controlador-avatar.js"></script>
+</body>
+
+</html>
